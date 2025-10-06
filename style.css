@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffc0cb;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #d6336c;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.5em;
+  white-space: nowrap;
+  animation: softBlink 2s infinite ease-in-out;
+}
+
+@keyframes softBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.heart-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.heart {
+  color: #ff69b4;
+  font-size: 20px;
+  position: absolute;
+  animation: fall 5s linear infinite;
+  user-select: none;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100px); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #ffdde9;
+  color: #d6336c;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+#noBtn {
+  background-color: #d4d4d4;
+  color: #555;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+}
