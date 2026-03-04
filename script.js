@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const noBtn = document.getElementById("noBtn");
   let sadClicks = 0;
   const sadTexts = [
-    "enggak , masih galau 😢",
-    "masih galau banget 😞",
+    "enggak , masih capek 😢",
+    "masih capek banget 😞",
     "kenapa sih 😭",
-    "beneran galau gitu? 🥺",
+    "beneran capek gitu? 🥺",
     "aku jadi sedih nih... 😣",
   ];
 
@@ -47,4 +47,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 });
+
 
