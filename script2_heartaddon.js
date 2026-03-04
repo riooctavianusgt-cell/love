@@ -198,7 +198,7 @@
 
       // typewriter state
       const word1 = 'For';
-      const word2 = 'Miya';
+      const word2 = 'Kak Ale';
       const base = Math.min(innerWidth, innerHeight);
       const fontSize = Math.max(28, Math.floor(base*0.06));
       const forY  = cy - fontSize*0.7;
@@ -343,3 +343,4 @@
     });
   });
 })();
+
