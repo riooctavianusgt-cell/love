@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "Miya, jangan galau lagi yah ❤️";
+  const text = "Kak Ale, jangan capek lagi yah ❤️";
   let index = 0;
 
   function typeText() {
@@ -47,3 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 });
+
